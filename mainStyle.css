@@ -23,11 +23,11 @@
 @keyframes rota {
   50% {
     transform: rotateY(1turn) translate3d(0,0,3em);
-	 -webkit-transform: rotateY(1turn) rotateX(.5turn) translate3d(0,0,3em);
+	 -webkit-transform: rotateY(1turn) translate3d(0,0,3em);
   }
   100% {
     transform: rotateY(1turn) translate3d(0,0,6em) ;
-	-webkit-transform: rotateY(2turn) rotateX(1turn) translate3d(0,0,6em);
+	-webkit-transform: rotateY(2turn) translate3d(0,0,6em);
 
   }
 }

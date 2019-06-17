@@ -1,13 +1,21 @@
 body
 {
+	font-size: 30;
+
+
+}
+.inside
+{	width: 100%
+	height: 100%;
 	display: grid;
 	grid-template-areas:
 	"nav nav nav"
 	"article article ads"
 	"footer footer footer";
-	grid-template-rows: 10% 80% 10%;
-	grid-template-columns: 20% 1fr 15%;
+	grid-template-rows: 10px 3em 10px;
+	grid-template-columns: 20% 1fr 20%;
 
+	
 
 }
 
@@ -28,22 +36,22 @@ body
 .mainArticle .content > .cardWrapper
 {
 	/* background-color: red; */
-	width: 13em;
-	height: 13em;
+	width: 1em;
+	height: 1em;
 	margin: .1em;
-	line-height: 20px;
+	line-height: 10%;
 	text-align: center;
 	font-size: 30;
 }
-.mainArticle .content > .contain
+.inside .content > .contain
 {
 	/* background-color: red; */
 	width: 5em;
 	height: 10em;
-	margin: 5em;
-	line-height: 20px;
+	margin: 6em;
+	line-height: 0px;
 	text-align: center;
-	font-size: 30;
+	font-size: 70%;
 }
 .cardWrapper
 {
@@ -73,7 +81,7 @@ body
   backface-visibility: hidden;
   color: #fff;
   text-align: center;
-  line-height: 208px;
+
   font-family: Helvetica;
 }
 .back{
@@ -85,7 +93,7 @@ body
   
   color: #fff;
   text-align: center;
-  line-height: 208px;
+
   font-family: Helvetica;
   
   /* rotating the back face of the card */
