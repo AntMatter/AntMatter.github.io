@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<link rel="stylesheet" href="stylesheet.css">
+			<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+				<title>It's All Adds!</title>
+				<body>
+					<center>
+					<img src="images/malachyswonger.png" style="width:30%;height:100%;">
+					<div class="menu">
+						<p>Home</p>
+						<p>Photos</p>
+						<p>About</p>
+					
+					</div>
+					</center>
+					<button class="slidesButtonL" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="slidesButtonR" onclick="plusDivs(+1)">&#10095;</button>
+					<div class="slidesContainer">
+					    
+						<img class="slides" src="images/DSC_0006.jpg" >
+						<img class="slides" src="images/DSC_0224 E1.jpg" >
+						<img class="slides" src="images/2017-03-18 16.54.52.jpg" >
+						<img class="slides" src="images/2017-03-21 13.53.12 E1.jpg" >
+						<img class="slides" src="images/DSC_0026 E1.jpg" >
+						<img class="slides" src="images/Hag-Fin1.jpg" >
+						
+					</div>
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
+
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
+
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("slides");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
+
+					
+					<div class="footer">
+						<p>Malachy Swonger 2019</p>
+					</div>
+				</body>
+			</html>

@@ -1,125 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="mystyle.css">
-		<link rel="stylesheet" href="mainStyle.css">
+	<link rel="stylesheet" href="stylesheet.css">
 			<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 				<title>It's All Adds!</title>
 				<body>
-					<ul>
-<h2><a href="index.html">It's All Adds<a></h2>
-  <li><a href="cool.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
+					<center>
+					<img src="images/malachyswonger.png" style="width:30%;height:100%;">
+					<div class="menu">
+						<img src="images/home.png">
+						<img src="images/photos.png">
+						<img src="images/about.png">
+					
+					</div>
+					</center>
+					<div class="slidesContainer">
+						<button class="slidesButtonL" onclick="plusDivs(-1)">&#10094;</button>
+						<div class="wrap"><img class="slides" id="slide1" src="images/DSC_0006.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide2" src="images/DSC_0224 E1.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide3" src="images/2017-03-18 16.54.52.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide4" src="images/2017-03-21 13.53.12 E1.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide5" src="images/DSC_0026 E1.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide6" src="images/Hag-Fin1.jpg" ></div>
+						<button class="slidesButtonR" onclick="plusDivs(+1)">&#10095;</button>
+					</div>
+					
+					
+					<script>
+						var slideIndex = 1;
+						showDivs(slideIndex);
 
-</ul>
-					<article class="mainArticle">
-<div class="content">
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
+						function plusDivs(n) {
+						  showDivs(slideIndex += n);
+						}
 
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
+						function showDivs(n) {
+						  var i;
+						  var x = document.getElementsByClassName("slides");
+						  if (n > x.length) {slideIndex = 1}
+						  if (n < 1) {slideIndex = x.length}
+						  for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						  }
+						  x[slideIndex-1].style.display = "block";  
+						}
+					</script>
 
-
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
-
-
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
-
-
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
-		<div class="contain">
-			<div class='ring'>
-				<div class='s1'></div>
-				<div class='s2'></div>
-				<div class='s3'></div>
-				<div class='s4'></div>
-				<div class='s5'></div>
-				<div class='s6'></div>
-				<div class='s7'></div>
-				<div class='s8'></div>
-			</div>
-		</div>
-							<div class="cardWrapper">
-								<div class='card'>
-									<div class='front'>Fifteen</div>
-									<div class='back'>Sixteen</div>
-								</div>
-							</div>
-						</div>
-
-</div>
-					</article>
-					<nav class="mainNav">Nav</nav>
-					<div class="siteAds">Ads</div>
-					<footer class="pageFooter">
-					fotter
-					</footer>
+					
+					<div class="footer">
+					</div>
 				</body>
-
-
 			</html>

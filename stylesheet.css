@@ -1,0 +1,55 @@
+
+.slidesContainer
+{
+	display: flex;
+	
+}
+.slidesContainer img 
+{
+	
+	max-width: 85vw;
+	max-height: 78vh;
+}
+.slidesContainer .slides 
+{	
+    margin-left: auto;
+    margin-right: auto;
+	
+}
+.slidesContainer .slidesButtonL
+{
+    margin-left: auto;
+    margin-right: auto;
+	width: 10%;
+}
+.slidesContainer .slidesButtonR
+{
+    margin-left: auto;
+    margin-right: auto;
+	width:10%
+}
+.menu
+{
+    display:flex-inline;
+	flex-direction: column;
+	object-fit: cover;
+
+}
+.menu img
+{
+	height: 1.9em;
+
+}
+body
+{
+}
+html
+{
+
+  background-color: #3d3d29;
+}
+h1
+{
+	font-size: 10;
+}
+	
