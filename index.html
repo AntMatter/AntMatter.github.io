@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 	<link rel="stylesheet" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Girassol|Ropa+Sans&display=swap" rel="stylesheet">
 			<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 				<title>It's All Adds!</title>
-				<body>
-					<center>
-					<img src="images/malachyswonger.png" style="width:30%;height:100%;">
-					<div class="menu">
-						<img src="images/home.png">
-						<img src="images/photos.png">
-						<img src="images/about.png">
+				<div class="bodyy">
 					
-					</div>
-					</center>
-					<div class="slidesContainer">
-						<button class="slidesButtonL" onclick="plusDivs(-1)">&#10094;</button>
+		
+		<button class="slidesButtonL" onclick="plusDivs(-1)">&#8249;</button>
+						<div class="container">
 						<div class="wrap"><img class="slides" id="slide1" src="images/DSC_0006.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide6" src="images/monostatbwp.jpg" ></div>
 						<div class="wrap"><img class="slides" id="slide2" src="images/DSC_0224 E1.jpg" ></div>
 						<div class="wrap"><img class="slides" id="slide3" src="images/2017-03-18 16.54.52.jpg" ></div>
 						<div class="wrap"><img class="slides" id="slide4" src="images/2017-03-21 13.53.12 E1.jpg" ></div>
 						<div class="wrap"><img class="slides" id="slide5" src="images/DSC_0026 E1.jpg" ></div>
 						<div class="wrap"><img class="slides" id="slide6" src="images/Hag-Fin1.jpg" ></div>
-						<button class="slidesButtonR" onclick="plusDivs(+1)">&#10095;</button>
+						<div class="wrap"><img class="slides" id="slide7" src="images/lamp.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide8" src="images/bw.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide9" src="images/bwstat.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide10" src="images/mesa.jpg" ></div>
+						<div class="wrap"><img class="slides" id="slide11" src="images/monostat.jpg" ></div>
+						</div>
+	<button class="slidesButtonR" onclick="plusDivs(+1)">&#8250;</button>
+					
+					
+					
+					<div class="menu">
+					<p>Malachy Swonger</p>
+					
+					<p style="font-family: 'Girassol', cursive;">HOME</p>
+					<p style="font-family: 'Girassol', cursive;">ABOUT</p>
+					<p style="font-family: 'Girassol', cursive;">CONTACT</p>
+
+					
 					</div>
+					
 					
 					
 					<script>
@@ -55,7 +68,7 @@
 						  for (i = 0; i < x.length; i++) {
 							x[i].style.display = "none";  
 						  }
-						  x[slideIndex-1].style.display = "block";  
+						  x[slideIndex-1].style.display = "grid";  
 						}
 						
 						
@@ -64,5 +77,5 @@
 					
 					<div class="footer">
 					</div>
-				</body>
+				</div>
 			</html>
