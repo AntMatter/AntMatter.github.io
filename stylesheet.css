@@ -59,6 +59,19 @@
 	margin-right: 3%
 
 }
+.footer
+{
+	grid-column: 4 / span 1;
+	grid-row: bottom / span -2;
+	align-self: center;
+	justify-self:end;
+	object-fit: cover;
+	font-family: 'Girassol', cursive;
+	text-align: right;
+	font-size:1em;
+	margin-right: 10%;
+	
+}
 .menu img
 {
 	height: 1.9em;
