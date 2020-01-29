@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Asul|Eczar|Fredericka+the+Great|Girassol|Overlock|Overlock+SC|Ropa+Sans|Staatliches|Tillana&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English&display=swap');
 :root {
   --mainColor: #000;
 }
+
 .bodyy
 {
 	display: grid;
 	align-items: center;
-	grid-template-columns:[line1] 2vw [line2] 70vw [line3] 2vw [line4] 20vw;
+	grid-template-columns:[line1] 2vw [line2] 40vw [line3] 30vw [line4] 20vw;
 	grid-template-rows: [top] 4vh [content] 89vh [bottom] 4vh;
 	justify-content: space-between;
 }
 .container
 {
 	align-content: center;
+	align-items:center;
+	align-self:center;
 	grid-column: line2 / span 1;
 	grid-row: content /span 1;
 }
@@ -21,9 +25,12 @@
 }
 .centey  
 {
-	display:inline-block;
-	margin: auto;
-	align-self: center;
+	grid-column: line3 / span 1;
+	grid-row: content;
+	background-color: transparent;
+	font-size:3vh;
+	border: 0;
+font-family: 'IM Fell English', serif;
 
 }
 .wrap img 
@@ -86,24 +93,6 @@
 	margin-right: 3%
 
 }
-.footer
-{
-	grid-column: 4 / span 1;
-	grid-row: bottom / span -2;
-	align-self: center;
-	justify-self:end;
-	object-fit: cover;
-	font-family: 'Girassol', cursive;
-	text-align: right;
-	font-size:1em;
-	margin-right: 10%;
-	
-}
-.menu img
-{
-	height: 1.9em;
-
-}
 .menu a {
   color: var(--mainColor);
   background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
@@ -133,9 +122,27 @@
       1px 1px 0 var(--mainColor);
   }
 }
+.footer
+{
+	grid-column: 4 / span 1;
+	grid-row: bottom / span -2;
+	align-self: center;
+	justify-self:end;
+	object-fit: cover;
+	font-family: 'Girassol', cursive;
+	text-align: right;
+	font-size:1em;
+	margin-right: 10%;
+	
+}
+.menu img
+{
+	height: 1.9em;
+
+}
+
 html
 {
-
   background-color: white;
 }
 h1
