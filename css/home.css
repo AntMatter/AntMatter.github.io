@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Asul|Eczar|Fredericka+the+Great|Girassol|Overlock|Overlock+SC|Ropa+Sans|Staatliches|Tillana&display=swap');
+:root {
+  --mainColor: #000;
+  --mainFont: 1.2vw;
+  --subFont: 1.1vw;
+}
+.body
+{
+	display: grid;
+	grid-template-columns: repeat(10,9.9vw);
+	grid-template-rows: repeat(20,4.8vh);
+}
+
+.leftMenu
+{
+	display: grid;
+	grid-template-columns: repeat(10,10%);
+	grid-template-rows: repeat(10,10%);	
+	grid-column: 1 / span 2;
+	grid-row: 2 / span 18;
+	background-color: transparent;
+	font-family: 'Fredericka the Great', cursive;
+	font-size:var(--mainFont);
+
+}
+
+.leftMenu a {
+  color: var(--mainColor);
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+  text-decoration: none;
+}
+
+.leftMenu a:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--mainColor);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
+@supports not(-webkit-text-stroke: 2px red) {
+  .leftMenu a:hover {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
+.topMenu
+{
+	grid-row: 1 / span 6;
+	grid-column: 2 / span 8;
+	align-self: start;
+}
+.topMenu ul
+{
+	list-style-type: none;
+	align-self: start;
+	margin-top : 0;
+	padding-top: 0;
+}
+ul {margin: 0px;}
+input#editMenu
+{
+	display:none;
+}
+input#projectMenu
+{
+	display: none;
+}
+.projectMenuContent
+{
+	max-height: 0;
+	overflow: hidden;
+	font-size:var(--subFont);
+	padding: 0;
+}
+.editMenuContent
+{
+	max-height: 0;
+	overflow: hidden;
+	font-size:var(--subFont);
+	padding: 0;
+}
+input#projectMenu:checked ~ .projectMenuContent
+{
+	max-height: 100%;
+}
+input#editMenu:checked ~ .editMenuContent
+{
+	max-height: 100%;
+}
+.lowerMenu
+{
+	grid-row: 8 / span 2;
+	grid-column: 2 / span 8;
+	align-self: end;
+}
+.photoContainer
+{
+	grid-column: 3 / span 7;
+	grid-row: 2 / span 18;
+	background-color:transparent;
+	display: grid;
+	grid-template-columns: repeat(3,33.3334%);
+	grid-template-rows: repeat(1,100%);
+	
+}
+.leftButton
+{
+	grid-column: 1 / span 1;
+	grid-row: 1 / span  1;
+	background-color: transparent;
+	border-color: transparent;
+	z-index: 2;
+}
+.rightButton
+{
+	grid-column: 3 / span 1;
+	grid-row: 1 / span  1;
+	background-color:transparent;
+	border-color: transparent;
+	z-index: 2;
+}
+.photoContainer img
+{
+	grid-column: 1 / span 3;
+	grid-row: 1 / span  1;
+	align-self: center;
+	justify-self: center;
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+}
+
+
+.rightPadding
+{
+	grid-column: 10 / span 1;
+	grid-row: 2 / span 18;
+	background-color:transparent;
+}
+*:focus {outline:none !important}

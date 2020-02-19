@@ -1,26 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="css/home.css">
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Malachy Swonger</title>
 	<div class="body">
-			<?php
-
-	// open this directory 
-	$myDirectory = opendir("Images/S");
-
-	// get each entry
-	while($entryName = readdir($myDirectory)) {
-		$dirArray[] = $entryName;
-	}
-
-	// close directory
-	closedir($myDirectory);
-
-	//	count elements in array
-	$indexCount	= count($dirArray);
-
-	?>
 		<div class="leftMenu">
 			<div class="topMenu">
 			
@@ -41,7 +24,7 @@
 				<label for="editMenu"> <p style="font-family: 'Girassol', cursive; padding-bottom: 0; margin-bottom: 0;"><a>EDITORIAL+</a></p></label>
 				<div class="editMenuContent">
 					<ul>
-						<li><p style="font-family: 'Girassol', cursive;"><a href="index.html">Bernie Sanders Denver Rally</a></p></li>
+						<li><p style="font-family: 'Girassol', cursive;"><a href="Editorial/berniesandersrally.html">Bernie Sanders Denver Rally</a></p></li>
 					</ul>
 				</div>
 			</div>	
@@ -52,28 +35,55 @@
 		</div>
 		
 		<div class="photoContainer">
-			<?php
-		// loop through the array of files and print them all in a list
-		for($index=0; $index < $indexCount; $index++) {
-			$extension = substr($dirArray[$index], -3);
-			if ($extension == 'jpg'){ // list only jpgs
-				echo '<img class="slides"  src="images/' . $dirArray[$index] . '"/>';
-			}	
-		}
-		?>
-			<img class="slides" id="slide1" src="images/augger.jpg" >
-			<img class="slides" id="slide1" src="images/mesa.jpg" >
-			<img class="slides" id="slide2" src="images/monostat.jpg" >
-			<img class="slides" id="slide3" src="images/DSC_0006.jpg" >
-			<img class="slides" id="slide4" src="images/bwstat.jpg" >
-			<img class="slides" id="slide5" src="images/DSC_0026 E1.jpg" >
-			<img class="slides" id="slide6" src="images/monostatbwp.jpg" >
-			<img class="slides" id="slide7" src="images/DSC_0224 E1.jpg" >
-			<img class="slides" id="slide8" src="images/standingtall.jpg" >
-			<img class="slides" id="slide9" src="images/ontheline.jpg" >
-			<img class="slides" id="slide10" src="images/hookpull.jpg" >
-			<img class="slides" id="slide11" src="images/2017-03-18 16.54.52.jpg" >
-			
+			<img class="slides" src="Editorial/Images/Sanders/1.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/2.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/3.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/4.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/5.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/6.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/7.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/8.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/9.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/10.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/11.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/12.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/13.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/14.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/15.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/16.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/17.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/18.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/19.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/20.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/21.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/22.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/23.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/24.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/25.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/26.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/27.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/28.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/29.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/30.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/31.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/32.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/33.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/34.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/35.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/36.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/37.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/38.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/39.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/40.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/41.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/42.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/43.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/44.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/45.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/46.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/47.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/48.jpg" >
+			<img class="slides" src="Editorial/Images/Sanders/49.jpg" >
 			
 			<button class="leftButton"onclick="plusDivs(-1)"></button>
 			<button class="rightButton"onclick="plusDivs(+1)"></button>
