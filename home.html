@@ -41,15 +41,16 @@
 	
 			<script>
 			$(document).ready(function(){
-				var folder = "images/";
-
+				var dir = "images/";
+				var fileextension = ".jpg";
 				$.ajax({
-					url : folder,
+					//This will retrieve the contents of the folder if the folder is configured as 'browsable'
+					url: dir,
 					success: function (data) {
-						$(data).find("a").attr("href", function (i, val) {
-							if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-								$(".photoContainer").append( '<img class="slides" src="'+ folder + val +'">' );
-							} 
+						//List all .png file names in the page
+						$(data).find("a:contains(" + fileextension + ")").each(function () {
+							var filename = this.href.replace(window.location.host, "").replace("http://", "");
+							$(".photoContainer").append("<img class='slides' src='" + dir + filename + "'>");
 						});
 					}
 				});
