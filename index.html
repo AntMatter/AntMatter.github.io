@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	<link rel="stylesheet" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Girassol|Ropa+Sans&display=swap" rel="stylesheet">
-			<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-				<title>Malachy Swonger</title>
-				<div class="bodyy">
-					
-		
-		<button class="slidesButtonL" onclick="plusDivs(-1)">&#8249;</button>
-						<div class="container">
-						<div class="wrap"><img class="slides" id="slide10" src="images/mesa.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide11" src="images/monostat.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide1" src="images/DSC_0006.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide9" src="images/bwstat.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide5" src="images/DSC_0026 E1.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide6" src="images/monostatbwp.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide2" src="images/DSC_0224 E1.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide3" src="images/standingtall.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide5" src="images/ontheline.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide6" src="images/hookpull.jpg" ></div>
-						<div class="wrap"><img class="slides" id="slide7" src="images/2017-03-18 16.54.52.jpg" ></div>
-						
-						
-						</div>
-	<button class="slidesButtonR" onclick="plusDivs(+1)">&#8250;</button>
-					
-					
-					
-					<div class="menu">
-					<p>Malachy Swonger</p>
-					
-					<p style="font-family: 'Girassol', cursive;"><a href="index.html">HOME</a></p>
-					<p style="font-family: 'Girassol', cursive;"><a href="about.html">ABOUT</a></p>
+	<link rel="stylesheet" href="/css/home.css">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>Malachy Swonger</title>
+	<div class="body">
+		<div class="leftMenu">
+			<div class="topMenu">
+			
+				<p>Malachy Swonger</p>
+				<p style="font-family: 'Girassol', cursive;"><a href="/index.html">HOME</a></p>
+			
+				<input type="checkbox" id="projectMenu">
+				<label for="projectMenu"> <p style="font-family: 'Girassol', cursive; padding-bottom: 0; margin-bottom: 0;"><a>PROJECTS+</a></p></label>
+				<div class="projectMenuContent">
+					<ul>
+						<li><p style="font-family: 'Girassol', cursive;"><a href="/Projects/IceFishing/index.html">Ice Fishing</a></p></li>
+						<li><p style="font-family: 'Girassol', cursive;"><a href="/Projects/ElSalvador/index.html">El Salvador</a></p></li>
+						<li><p style="font-family: 'Girassol', cursive;"><a href="/Projects/Misc/index.html">Misc</a></p></li>
+					</ul>
+				</div>
+				
+				<input type="checkbox" id="editMenu">
+				<label for="editMenu"> <p style="font-family: 'Girassol', cursive; padding-bottom: 0; margin-bottom: 0;"><a>EDITORIAL+</a></p></label>
+				<div class="editMenuContent">
+					<ul>
+						<li><p style="font-family: 'Girassol', cursive;"><a href="SandersRally/index.html">Bernie Sanders Denver Rally</a></p></li>
+					</ul>
+				</div>
+			</div>	
+				<div class="lowerMenu">
+					<p style="font-family: 'Girassol', cursive;"><a href="/about.html">ABOUT</a></p>
 					<p style="font-family: 'Girassol', cursive;"><a href="mailto:malachyswonger+photos@gmail.com?Subject=Photography%20Portfolio" target="_top">CONTACT</a></p>
-
-					
-					</div>
-					<div class="footer">
-					<p>© Malachy Swonger</p>
-					</div>
-					
-					
-					<script>
+				</div>
+		</div>
+		
+		<div class="photoContainer">
+			<img class="slides" src="Images/1.jpg" >
+			<img class="slides" src="Images/2.jpg" >
+			<img class="slides" src="Images/3.jpg" >
+			<img class="slides" src="Images/4.jpg" >
+			<img class="slides" src="Images/5.jpg" >
+			<img class="slides" src="Images/6.jpg" >
+			<img class="slides" src="Images/7.jpg" >
+			<img class="slides" src="Images/8.jpg" >
+			<img class="slides" src="Images/9.jpg" >
+			<img class="slides" src="Images/10.jpg" >
+			<img class="slides" src="Images/11.jpg" >
+			<img class="slides" src="Images/12.jpg" >
+			<img class="slides" src="Images/13.jpg" >
+			<img class="slides" src="Images/14.jpg" >
+			
+			<button class="leftButton"onclick="plusDivs(-1)"></button>
+			<button class="rightButton"onclick="plusDivs(+1)"></button>
+		</div>
+		
+		<div class="rightPadding">
+			<p></p>
+		</div>
+		
+	</div>
+	<script>
 						var slideIndex = 1;
 						showDivs(slideIndex);
 
@@ -76,9 +94,4 @@
 						
 						
 					</script>
-
-					
-					<div class="footer">
-					</div>
-				</div>
-			</html>
+</html>
