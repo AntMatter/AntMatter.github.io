@@ -1,6 +1,5 @@
 var slideIndex = 1;
 	showDivs(slideIndex);
-	setInterval(myMethod, 1000);
 
 	function plusDivs(n) {
 	  showDivs(slideIndex += n);
@@ -19,10 +18,6 @@ var slideIndex = 1;
 		plusDivs(1);
 		}
 	}
-	function myMethod( )
-	{
-		plusDivs(1);
-	}
 
 	function showDivs(n) {
 	  var i;
@@ -33,6 +28,7 @@ var slideIndex = 1;
 		x[i].style.display = "none";  
 	  }
 	  x[slideIndex-1].style.display = "grid";  
+	  setTimeout(showDivs(n+1), 2000);
 	}
 	
 
