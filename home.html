@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 	<link rel="stylesheet" href="home.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Malachy Swonger</title>
 	<div class="body">
-		
 		<div class="leftMenu">
 			<div class="topMenu">
 			
@@ -35,21 +35,26 @@
 				</div>
 		</div>
 		
+
+		
 		<div class="photoContainer">
-			
-			<img class="slides" id="slide1" src="images/augger.jpg" >
-			<img class="slides" id="slide1" src="images/mesa.jpg" >
-			<img class="slides" id="slide2" src="images/monostat.jpg" >
-			<img class="slides" id="slide3" src="images/DSC_0006.jpg" >
-			<img class="slides" id="slide4" src="images/bwstat.jpg" >
-			<img class="slides" id="slide5" src="images/DSC_0026 E1.jpg" >
-			<img class="slides" id="slide6" src="images/monostatbwp.jpg" >
-			<img class="slides" id="slide7" src="images/DSC_0224 E1.jpg" >
-			<img class="slides" id="slide8" src="images/standingtall.jpg" >
-			<img class="slides" id="slide9" src="images/ontheline.jpg" >
-			<img class="slides" id="slide10" src="images/hookpull.jpg" >
-			<img class="slides" id="slide11" src="images/2017-03-18 16.54.52.jpg" >
-			
+	
+			<script>
+			$(document).ready(function(){
+				var folder = "images/";
+
+				$.ajax({
+					url : folder,
+					success: function (data) {
+						$(data).find("a").attr("href", function (i, val) {
+							if( val.match(/\.(jpe?g|png|gif)$/) ) { 
+								$(".photoContainer").append( '<img class="slides" src="'+ folder + val +'">' );
+							} 
+						});
+					}
+				});
+			});
+			</script>
 			
 			<button class="leftButton"onclick="plusDivs(-1)"></button>
 			<button class="rightButton"onclick="plusDivs(+1)"></button>
