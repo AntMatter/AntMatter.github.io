@@ -28,7 +28,7 @@ var slideIndex = 1;
 		x[i].style.display = "none";  
 	  }
 	  x[slideIndex-1].style.display = "grid";  
-	  setTimeout(showDivs(n+1), 2000);
+	  
 	}
 	
 
