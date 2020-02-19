@@ -6,7 +6,7 @@ var slideIndex = 1;
 	}
 	
 	document.onkeydown = checkKey;
-	function checkKey(e) {
+	window.onload = function checkKey(e) {
 		e = e || window.event;
 		if(e.keyCode == '37'){
 		//left
@@ -28,7 +28,6 @@ var slideIndex = 1;
 		x[i].style.display = "none";  
 	  }
 	  x[slideIndex-1].style.display = "grid";  
-	  
 	}
 	
 
