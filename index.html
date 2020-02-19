@@ -35,12 +35,12 @@
 		</div>
 		
 		<div class="photoContainer">
-			<img class="slides fade" src="Images/1.jpg" >
-			<img class="slides fade" src="Images/2.jpg" >
-			<img class="slides fade" src="Images/3.jpg" >
-			<img class="slides fade" src="Images/4.jpg" >
-			<img class="slides fade" src="Images/5.jpg" >
-			<img class="slides fade" src="Images/6.jpg" >
+			<img class="slides" src="Images/1.jpg" >
+			<img class="slides" src="Images/2.jpg" >
+			<img class="slides" src="Images/3.jpg" >
+			<img class="slides" src="Images/4.jpg" >
+			<img class="slides" src="Images/5.jpg" >
+			<img class="slides" src="Images/6.jpg" >
 
 			
 			<button class="leftButton"onclick="plusDivs(-1)"></button>
@@ -76,7 +76,7 @@
 
 						function showDivs(n) {
 						  var i;
-						  var x = document.getElementsByClassName("slides fade");
+						  var x = document.getElementsByClassName("slides");
 						  if (n > x.length) {slideIndex = 1}
 						  if (n < 1) {slideIndex = x.length}
 						  for (i = 0; i < x.length; i++) {
