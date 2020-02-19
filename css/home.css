@@ -4,6 +4,7 @@
   --mainFont: 1.2vw;
   --subFont: 1.1vw;
 }
+
 .body
 {
 	display: grid;
@@ -22,6 +23,16 @@
 	font-family: 'Fredericka the Great', cursive;
 	font-size:var(--mainFont);
 
+}
+.leftMenu p
+{
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 
 .leftMenu a {
