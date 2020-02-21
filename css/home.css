@@ -112,6 +112,8 @@ input#editMenu:checked ~ .editMenuContent
 	display: grid;
 	grid-template-columns: repeat(3,33.3334%);
 	grid-template-rows: repeat(1,100%);
+	align-items: center;
+	justify-items: center;
 	
 }
 .leftButton
