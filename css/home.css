@@ -118,6 +118,8 @@ input#editMenu:checked ~ .editMenuContent
 }
 .leftButton
 {
+	width: 100px;
+	height: 100px;
 	grid-column: 1 / span 1;
 	grid-row: 1 / span  1;
 	justify-self: stretch;
